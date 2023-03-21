@@ -1,0 +1,62 @@
+.language-icon {
+display: flex;
+align-items: center;
+gap: 10px;
+border: 1px solid #fff;
+border-radius: 40px;
+padding: 4px;
+background-color: #222229;
+}
+
+.language-icon:hover{
+    color: #89bf19;
+    text-decoration: underline;
+    background-color: #4b4b5c; 
+    border: 1px solid #89bf19
+}
+
+// .header__links-item.openButton{
+//     position: relative;
+// }
+
+// .header__links-item.is-active {
+//     position: relative;
+// }
+
+.icon-inactive {
+    background-color: #222229;
+
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 10px;
+
+    position: absolute;
+    height: 50px;
+    top: 65px;
+    left: 80%;
+    
+    opacity: 0.9;
+    border: 1px solid #89bf19;
+    border-radius: 20px;
+   
+    height: auto;
+
+    @media screen and (max-width: 800px) {
+        left:60%;
+
+    }
+    @media screen and (max-width: 343px) {
+        left:50%;
+
+    }
+}
+
+
+.icon-inactive.is-hidden{
+opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}

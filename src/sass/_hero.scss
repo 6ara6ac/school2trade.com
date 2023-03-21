@@ -1,25 +1,27 @@
 .hero__description{
     max-width: 1000px;
     padding: 20px;
-    margin: 50px auto;
+    margin: 25px auto;
     text-align: center;
     background-color: #89bf19;
     color: #fff;
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .flex__container{
-    display: flex;
     align-items: center;
+    background-color: #007EFC;
+    padding: 30px;
+    border-radius: 40px;
+    width: 50vw;
 }
 
 .hero__wrapper{
-    padding: 50px;
-    background-color: #007EFC;
-    border-radius: 40px;
+    display: flex;
     color: #fff;
+    gap: 20px;
 }
 
 .hero__subtitle{
@@ -28,8 +30,15 @@
     margin-bottom: 20px;
 }
 
+.main__img-wrapper{
+    max-width: 50%;
+    border-radius: 40px;
+    padding: 30px;
+    background-color: #fff;
+}
+
 .hero__img {
-    max-width: 40vw;
+    
 }
 
 .hero__list-item{
