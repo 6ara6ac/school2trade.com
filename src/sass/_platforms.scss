@@ -213,3 +213,37 @@ border: 1px solid #89bf19;
     padding-top: 60px;
 }
 
+.google__play-img {
+    max-width: 138px;
+    height: 58px;
+}
+
+.platforms__apps{
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.platforms_desk{
+    text-align: justify;
+}
+
+.platforms__store{
+    display: flex;
+    align-items: center;
+
+        justify-content: center;
+
+        @media screen and (max-width:767px) {
+            margin-top: 20px;
+        }
+
+}
+
+.app__store-img {
+    max-width: 138px;
+}
+
