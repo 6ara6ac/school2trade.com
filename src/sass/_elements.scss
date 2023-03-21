@@ -1,0 +1,97 @@
+:root {
+    --swiper-theme-color: #79bf19 !important;
+  }
+
+ul{
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+.button {
+    display: flex;
+    background: linear-gradient(180deg, #50B03A 0%, #3A9126 100%), #3A9126;
+    border-radius: 20px;
+    border: 0;
+
+    align-items: center;
+    justify-content: center;
+    width: 296px;
+    height: 78px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+
+    @media screen and (max-width:767px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 241px;
+        height: 67px;
+        font-size: 16px;
+        line-height: 1.25;
+        
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+}
+
+.button::before {
+    content: url('../images/el_ok-sign.svg');
+    margin-right: 9px;
+}
+
+.button:hover{
+    background: linear-gradient(180deg, #337224 0%, #3A9126 100%);
+}
+
+
+.list {
+    display: grid;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #5C5C79;
+    margin-bottom: 59px;
+}
+
+
+
+.item::before {
+    content: url('../images/el_ok.svg');
+    margin-right: 8px;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: #89bf19;
+    text-align: center;
+    padding: 20px 0;
+    // padding-top: 60px;
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+        line-height: 1.08;
+        margin-bottom: 15px;
+        margin-top: 66px;
+    }
+}
+
+
+

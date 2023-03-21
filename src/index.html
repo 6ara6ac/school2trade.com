@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School2Trade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+
+      <div class="header__container ">
+      <a href=""><img class ="logo" src="./images/logo.svg" width="156px" height="52px" alt="Логотип"></a>
+      <div class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item"><a href="#benefits">Обучение</a></li>
+          <li class="header__navigation-item"><a href="#pricing">Преимущества</a></li>
+          <li class="header__navigation-item"><a href="#platforms">Платформа</a></li>
+          <li class="header__navigation-item"><a href="">Инвестплан</a></li>
+        </ul>
+      </div>
+      <div class="header__links">
+      <ul class="header__links-list">
+        <li class="header__links-item openButton"><button class="header__learn" data-modal-open>Начать обучение</button></li>
+        <li class="header__links-item enterIcon">
+          <a class="header__links-icon" href="https://tx.lime.co/" target="_blank">
+           <img class="icon__img" width="20" height="20" src="./images/bi_graph-up-arrow.svg">
+           </a>
+         </li>
+        <li class="header__links-item enterIcon">
+          <a class="header__links-icon" href="https://myaccount-int.lime.co/" target="_blank">
+           <img class="icon__img" alt="войти в кабинет" width="24" height="24" src="./images/ph_sign-in-light.svg">
+           </a>
+         </li>
+        <div class="language-list">
+          <div class="language-icon icon-active is-active" data-lang="ru" class="list-item js-action" data-lang-button><img class="lang-style" alt="сменить язык" width="36" height="36" src="./images/flags/russia.svg" width="36px"></div>
+          <ul class="icon-inactive is-hidden">
+            <!-- <li><a class="language-icon" data-lang="ru" href="https://lt.lime.co" class="list-item active js-action" data-lang="select-language"><img class="lang-style" width="36" height="36" src="./images/flags/USA.svg" width="36px">English</a></li> -->
+          </ul>
+      </div>
+      </ul>
+      </div>
+      </div>
+      
+      <div class="mobile__menu" data-menu-button>
+        <div class="mobile__menu-container">
+          <button type="button" class="mobile__button" aria-expanded="false" 
+            aria-controls="menu__controls" aria-label="открыть мобильное меню">
+            <img class="navigation__closed" src="./images/Group 97.svg" alt="Открыть мобильное меню">
+            <img class="navigation__opened" src="./images/closed.svg" alt="Закрыть мобильное меню">
+          </button>
+          <a class="logo mobile" href=""><img class ="logo" src="./images/logo.webp" width="156px" height="52px" alt="Логотип"></a>
+          
+            <a class="header__links-icon mobileIcon" href="https://myaccount-int.lime.co/" target="_blank">
+              <img alt="войти в кабинет" width="24" height="24" src="./images/ph_sign-in-light.svg">
+              </a>
+            <div class="language-list">
+                <div class="language-icon icon-active is-active" data-lang="ru" class="list-item js-action" data-lang-button><img class="lang-style" alt="сменить язык" width="36" height="36" src="./images/flags/russia.svg" width="36px"></div>
+                <ul class="icon-inactive is-hidden">
+                  <!-- <li><a class="language-icon" data-lang="ru" href="https://lt.lime.co" class="list-item active js-action" data-lang="select-language"><img class="lang-style" width="36" height="36" src="./images/flags/USA.svg" width="36px">English</a></li> -->
+                </ul>
+            </div>
+          </div>
+          <div class="mobile__menu-container">
+            <a class="header__links-item mobileButton" href="https://full-int.lime.co/openaccount/real/limetrader/lmi/">Открыть счет</a>
+            <button class="header__learn mobile" data-modal-open>Начать обучение</button>
+          </div>
+          
+  
+          <!-- <div class="mobile__navigation" data-menu>
+            <ul class="mobile__navigation-list">
+              <li class="mobile__navigation-item"><a href="#benefits">Преимущества</a></li>
+              <li class="mobile__navigation-item"><a href="#pricing">Тарифы</a></li>
+              <li class="mobile__navigation-item"><a href="#platforms">Платформы</a></li>
+              <li class="mobile__navigation-item"><a href="">Обучение</a></li>
+            </ul>
+            <div class="platforms__store headerStore">
+              <a class="app__store" href='https://apps.apple.com/app/lime-trader/id1314411861?l=us'><img class="app__store-img" alt='Get it on Google Play' src='./images/app__store.svg'/></a>
+              <a class="google__play" href='https://play.google.com/store/apps/details?id=com.just2trade.android&hl=ru&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="google__play-img" alt='Get it on Google Play' src='./images/google__store.png'/></a>
+            </div>
+  
+          </div> -->
+        </div>
+    </header>
+
+    <section class="hero container">
+      <h1 class="title">Школа трейдинга и инвестиций School2Trade</h1>
+      <p class="hero__description">Трейдинг и инвестиции являются отличным источником дополнительного или основного дохода. Но прежде чем начинать торговать на бирже надо пройти обучение у опытного трейдера. Школа трейдинга и инвестиций School2Trade проводит бесплатное онлайн обучение, где опытный трейдер обучает Вас зарабатывать на бирже по уникальной системе подготовки трейдеров:</p>
+      <div class="hero__wrapper">
+        <h2 class="hero__subtitle">Сначала мы обучим Вас базовым навыкам трейдинга:</h2>
+        <div class="flex__container">
+        <ul class="hero__list">
+          <li class="hero__list-item"><img src="./images/heroImg/icon1.svg" alt="" width="42">Настройка торгового терминала</li>
+          <li class="hero__list-item"><img src="./images/heroImg/icon2.svg" alt="" width="42">Проведение технического, графического и новостного анализа</li>
+          <li class="hero__list-item"><img src="./images/heroImg/icon3.svg" alt="" width="42">Совершение сделок с акциями и ETF</li>
+          <li class="hero__list-item"><img src="./images/heroImg/icon4.svg" alt="" width="42">Совершение сделок с опционами</li>
+          <li class="hero__list-item"><img src="./images/heroImg/icon5.svg" alt="" width="42">Управление рисками с помощью Stop loss и Take profit</li>
+          <li class="hero__list-item"><img src="./images/heroImg/icon6.svg" alt="" width="42">Использование кредитное плеча для увеличения прибыли от сделок</li>
+          <li class="hero__list-item"><img src="./images/heroImg/icon7.svg" alt="" width="42">Использование заемных акций для получения прибыли на падении цены</li>
+          <li class="hero__list-item"><img src="./images/heroImg/icon8.svg" alt="" width="42">Управление инвестиционным портфелем
+          </li>
+        </ul>
+        <img class="hero__img" src="./images/Mockup_big.webp" alt="">
+      </div>
+      </div>
+      <div class="hero__button-wrapper">
+        <p class="hero__button-description1">После того как Вы освоите базовые навыки трейдинга Вы открываете брокерский счет у европейского брокера Lime Trading  Ltd  и начинаете совершать реальные сделки, <span class="descr__bold">но чтобы у Вас не было страхов и сомнений мы компенсируем Вам убыток от первых 30 сделок (лимит компенсации 50 долларов)</span></p>
+        <p class="hero__button-description2">Ну а чтобы убытков не было , а была прибыль, мы проводим  для наших учеников  ежедневные стримы по трейдингу и инвестициям, на которых опытный трейдер анализирует: новости, статистику, компании, идеи, сделки. Отвечает на Ваши вопросы.  И благодаря этим стримам Вы на реальных сделках и шаг за шагом научитесь зарабатывать, торгуя акциями, ETF, опционами.</p>
+      </div>
+      <button class="button" data-modal-open>Начать обучение</button>
+    </section>
+
+    <section class="benefits container">
+      <h2 class="title">Преимущества обучения в Школе LimeTrader</h2>
+      <div class="benefits__wrapper">
+        <ul>
+          <li class="hero__list-item"><img src="./images/el_ok.svg" alt="" >Обучение проводит опытный трейдер</li>
+          <li class="hero__list-item"><img src="./images/el_ok.svg" alt="" >Обучение проходит онлайн и абсолютно бесплатно</li>
+          <li class="hero__list-item"><img src="./images/el_ok.svg" alt="" >Перед началом обучения за Вами закрепляется персональный менеджер, который будет помогать Вам осваивать трейдинг и инвестиции, и ответит на все вопросы, которые возникнут в процессе обучения и трейдинга</li>
+          <li class="hero__list-item"><img src="./images/el_ok.svg" alt="" >Вы сможете выбрать удобное для Вас время обучения: утром, днем или вечером</li>
+          <li class="hero__list-item"><img src="./images/el_ok.svg" alt="" >Если Вы не усвоили какую-то тему, то Вы всегда сможете записаться через персонального менеджера на повторное бесплатное обучение</li>
+          <li class="hero__list-item"><img src="./images/el_ok.svg" alt="" >Мы проводим ежедневные стримы по трейдингу и инвестициям для наших клиентов, на которых анализируем: новости, статистику, компании, идеи, сделки. Отвечаем на Ваши вопросы.</li>
+          <li class="hero__list-item"><img src="./images/el_ok.svg" alt="" >Мы обучаем зарабатывать, торгуя американскими акциями и ETF, а американский финансовый рынок лучшее место для трейдинга и инвестиций так как:</li>
+        </ul>
+
+    
+      </div>
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide"><div class="slider-wrapper"><img class="swiper-img" src="./images/swiperImg/icons8-stocks.svg">Oгpoмный выбop инcтpумeнтoв для тopгoвли. Ha двух кpупнeйшиx фoндoвыx биpжax CШA – NYSE и NASDAQ – тopгуютcя бумaги oкoлo 6,5 тысяч кoмпaний и ETF.</div></div>
+            <div class="swiper-slide"><div class="slider-wrapper"><img class="swiper-img" src="./images/swiperImg/icons8-economics.svg">59% капитализации всего мирового фондового рынка приходится на США.</div></div>
+            <div class="swiper-slide"><div class="slider-wrapper"><img class="swiper-img" src="./images/swiperImg/icons8-inflation.svg">В США очень низкая среднегодовая инфляция, а значит инвестиции не обесцениваются из-за инфляции</div></div>
+            <div class="swiper-slide"><div class="slider-wrapper"><img class="swiper-img" src="./images/swiperImg/icons8-dollar-coins.svg">Доллар - стабильная мировая валюта, которая дает возможность чувствовать себя защищенным от колебаний валютного курса</div></div>
+            <div class="swiper-slide"><div class="slider-wrapper"><img class="swiper-img" src="./images/swiperImg/icons8-interest-rate.svg">В США низкие процентные ставки по кредитам, что позволяет компаниям получать дешевые кредиты для развития бизнеса, а инвесторам увеличивать свои доходы, инвестируя в акции не только  собственные, но и заемные средства.</div></div>
+            <div class="swiper-slide"><div class="slider-wrapper"><img class="swiper-img" src="./images/swiperImg/icons8-regulation.svg">Американские биржи и все компании, ценные бумаги которых торгуются на бирже, жестко контролируются регулятором: Комиссией по ценным бумагам и биржам США.</div></div>
+          </div>
+        <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+      </div>
+      <button class="button" data-modal-open>Начать обучение</button>
+    </section>
+
+    <section class="platforms container">
+      <h2 class="title">Платформы</h2>
+      <p class="hero__description">Мы провели исследование рынка платформ для трейдинга и остановили свой выбор на платформе LimeTrader от европейского брокера Lime Trading  Ltd, которая обладаем целым рядом преимуществ, которые позволяют существенно увеличить Ваши шансы на стабильную прибыль от трейдинга.</p>
+      <ul class="last-learn__list">
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/benefits/0_commission_new.webp" alt="">Брокерская комиссия (акции США, ETF): 0$</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/last-learn-list6.webp" alt="">Минимальный депозит: 30$</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/last-learn-list4.webp" alt="">Кредитное плечо: 1:6</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/last-learn-list2.webp" alt="">Маржинальное кредитование: 9%</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/last-learn-list3.webp" alt="">Клиентская поддержка: 24 x 7</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/last-learn-list5.webp" alt="">Бесплатный мультитерминал</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/slider_learn2.webp" alt="">Пополнение счета банковской картой и банковским переводом</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/learn_benefits1.webp" alt="">Простой и удобный поиск акций и ETF</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/learn_benefits1.webp" alt="">Более 130 индикаторов и инструментов графического анализа</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/learn_benefits1.webp" alt="">Персональная настройка и алерты</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/learn_benefits1.webp" alt="">Новости</li>
+        <li class="last-learn__item"><img class="last-learn__itemImg" src="../src/images/learn/learn_benefits1.webp" alt="">Торговля опционами</li>
+    </ul>
+    <h3 class="desktop__title titleVideo">Для <span class="desktop__title-green">Веб-версии</h3>
+
+      <ul class="learn__list-video">
+        <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/basicGuide.svg"></img><p class="video__text">Настройка LimeTrader</p><a class="learn__video-link" href="https://youtu.be/M64YquSH9Dk" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Настройка">Открыть</a></li>
+        <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/graphikalAnalys.svg"></img><p class="video__text">Графический анализ LimeTrader </p><a class="learn__video-link" href="https://youtu.be/xiOIvnKNDiM" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Графический анализ">Открыть</a></li>
+        <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/technicalAnalys.svg"></img><p class="video__text">Технический анализ LimeTrader</p><a class="learn__video-link" href="https://youtu.be/1KyahfnHMdE" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Технический анализ">Открыть</a></li>
+        <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/alerts.svg"></img><p class="video__text">Настройка алертов LimeTrader</p><a class="learn__video-link" href="https://youtu.be/Eom1Fm4CktQ" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Настройка алертов">Открыть</a></li>
+        <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/trade.svg"></img><p class="video__text">Совершение сделок LimeTrader </p><a class="learn__video-link" href="https://youtu.be/42hoUBj8fH4" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Совершение сделок">Открыть</a></li>
+        <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/portfolio.svg"></img><p class="video__text">Портфель LimeTrader </p><a class="learn__video-link" href="https://youtu.be/00hBphyjTvg" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Портфель">Открыть</a></li>
+      </ul>
+      
+      <h3 class="desktop__title titleVideo">Для <span class="desktop__title-green">iOS|Android</h3>
+        <ul class="learn__list-video">
+          <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/mobileBasic.svg"></img><p class="video__text">Настройка LimeTrader моб.</p><a class="learn__video-link" href="https://youtu.be/nIcRlS1312s" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Мобильное приложение настройка">Открыть</a></li>
+          <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/mobile_graphical.svg"></img><p class="video__text">Графический анализ LimeTrader моб.</p><a class="learn__video-link" href="https://youtu.be/fjmPgOKhFRo" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Мобильное приложение графический анализ">Открыть</a></li>
+          <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/mobile_technical.svg"></img><p class="video__text">Технический анализ LimeTrader моб.</p><a class="learn__video-link" href="https://youtu.be/eOe9ywUakzo" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Мобильное приложение технический анализ">Открыть</a></li>
+          <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/mobile_alerts.svg"></img><p class="video__text">Настройка алертов LimeTrader моб.</p><a class="learn__video-link" href="https://youtu.be/6r3nUZHSQvg" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Мобильное приложение настройка алертов">Открыть</a></li>
+          <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/mobileOrder.svg"></img><p class="video__text">Совершение сделок LimeTrader моб.</p><a class="learn__video-link" href="https://youtu.be/1hQD9TMpzDM" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Мобильное приложение совершение сделок">Открыть</a></li>
+          <li class="learn__video"><img class="video__img" width="309" height="174" src="./images/youtube/mobilePortfolio.svg"></img><p class="video__text">Портфель LimeTrader моб.</p><a class="learn__video-link" href="https://youtu.be/e77ePNfq7Hw" target="_blank"><img width="14" height="14" class="learn__video-img" src="./images/video_pic.svg" alt="Мобильное приложение портфель">Открыть</a></li>
+        </ul>
+        <button class="button" data-modal-open>Начать обучение</button>
+
+    <section class="investplan elementor-section elementor-top-section elementor-element elementor-element-8202a16 page-section calculator elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8202a16" data-element_type="section" id="invest">
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-row">
+    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-102b9da" data-id="102b9da" data-element_type="column">
+<div class="elementor-column-wrap elementor-element-populated">
+        <div class="elementor-widget-wrap">
+      <div class="elementor-element elementor-element-ecac8c0 elementor-widget elementor-widget-heading" data-id="ecac8c0" data-element_type="widget" data-widget_type="heading.default">
+  <div class="elementor-widget-container">
+<h2 class="elementor-heading-title title elementor-size-default">ИНВЕСТИЦИОННЫЙ ПЛАН</h2>		</div>
+  </div>
+  <div class="elementor-element elementor-element-54a0405 elementor-widget elementor-widget-heading" data-id="54a0405" data-element_type="widget" data-widget_type="heading.default">
+  <div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">У любого трейдера или инвестора должен быть четкий план увеличения капитала, например, если Вы откроете брокерский счет, разместите на нем 5 000 долларов, ежемесячно будете довносить 400 долларов и ежегодно в среднем зарабатывать 40% годовых, то через 12 лет Ваш капитал будет равен чуть более 1 000 000 долларов.</span>		</div>
+  </div>
+  <div class="elementor-element elementor-element-5931319 elementor-widget elementor-widget-html" data-id="5931319" data-element_type="widget" data-widget_type="html.default">
+  <div class="elementor-widget-container">
+
+
+<div class="x_panel">
+    <div class="x_title">
+      <h6 class="investplan-subtitle">Инвестиционный план на 12 лет</h6>
+      
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+    <span class="Y-title">Капитал в (USD)</span>
+      <div id="graph_bar" style="width: 100%; height: 480px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+        <!-- <svg height="480" version="1.1" width="1150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.671875px;"> -->
+          <!-- <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaГ«l @@VERSION</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs> -->
+          <!-- <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="65.890625" y="413.293638648625" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">0</tspan></text><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#aaaaaa" d="M78.390625,413.293638648625H1125" stroke-width="0.5"></path><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="65.890625" y="316.2202289864688" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.250014142718783">325,000</tspan></text><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#aaaaaa" d="M78.390625,316.2202289864688H1125" stroke-width="0.5"></path>
+          <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="65.890625" y="219.1468193243125" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249999255953128">650,000</tspan></text><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#aaaaaa" d="M78.390625,219.1468193243125H1125" stroke-width="0.5"></path>
+          <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="65.890625" y="122.07340966215622" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.2499996279765355">975,000</tspan></text><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#aaaaaa" d="M78.390625,122.07340966215622H1125" stroke-width="0.5"></path><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="65.890625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.25">1,300,000</tspan></text><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#aaaaaa" d="M78.390625,25H1125" stroke-width="0.5"></path>
+          <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="1081.3912760416665" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-71.3791,718.8529)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">12-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="994.173828125" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-86.7906,668.5739)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">11-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="906.9563802083334" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-102.9253,618.8012)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">10-ый год</tspan></text>
+          <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="819.7389322916666" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-115.9657,566.8619)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">9-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="732.521484375" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-131.7388,516.836)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">8-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="645.3040364583334" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-147.5119,466.8101)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">7-ый год</tspan></text>
+          <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="558.0865885416667" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-163.285,416.7843)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">6-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="470.869140625" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-179.0581,366.7584)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">5-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="383.6516927083333" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-194.8312,316.7325)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">4-ый год</tspan></text>
+          <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="296.43424479166663" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-210.6043,266.7067)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">3-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="209.216796875" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-226.3774,216.6808)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">2-ый год</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="121.99934895833334" y="425.793638648625" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-242.1505,166.6549)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.249998511906256">1-ый год</tspan></text> -->
+          <rect x="89.29280598958334" y="409.6415876334275" width="65.4130859375" height="3.6520510151975145" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="176.51025390625003" y="406.45250211046493" width="65.4130859375" height="6.841136538160072" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="263.7277018229167" y="401.9877226408344" width="65.4130859375" height="11.305916007790586" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="350.9451497395833" y="395.73679243342025" width="65.4130859375" height="17.556846215204757" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect>
+          <rect x="438.16259765625" y="386.98584856793764" width="65.4130859375" height="26.30779008068737" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="525.3800455729167" y="374.73428820633046" width="65.4130859375" height="38.559350442294544" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="612.5974934895834" y="357.58216343756334" width="65.4130859375" height="55.71147521106167" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="699.8149414062501" y="333.5691887612893" width="65.4130859375" height="79.72444988733571" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="787.0323893229167" y="299.9510242145057" width="65.4130859375" height="113.3426144341193" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect>
+          <rect x="874.2498372395834" y="252.88535489907719" width="65.4130859375" height="160.40828374954782" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="961.4672851562501" y="186.99371654489158" width="65.4130859375" height="226.29992210373342" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect><rect x="1048.6847330729167" y="94.74560206148038" width="65.4130859375" height="318.5480365871446" rx="0" ry="0" fill="#335afb" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill-opacity="1"></rect></svg></div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+  <div class="elementor-element elementor-element-984084b elementor-widget elementor-widget-heading" data-id="984084b" data-element_type="widget" data-widget_type="heading.default">
+  <div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default investplan-subtitle"><b>Основной вопрос: </b>как получить среднегодовую доходность в районе 40%?</span>	</div>
+  </div>
+  <div class="elementor-element elementor-element-5eb1668 elementor-widget elementor-widget-text-editor" data-id="5eb1668" data-element_type="widget" data-widget_type="text-editor.default">
+  <div class="elementor-widget-container">
+    <div class="elementor-text-editor elementor-clearfix">
+      <ul class="chart__list">
+    <li>
+      <p>
+      Среднегодовая доходность индекса S&amp;P 500 составляет порядка 14%. Среднегодовая доходность индекса  NASDAQ 100 за этот же период
+        составила порядка  20%.  Примечание: указанные выше доходности индексов не включают дивиденды
+      </p>
+    </li>
+    <li>
+      <p>
+        За счет дивидендов по акциям и ETF можем дополнительно получить 3-4% 
+      </p>
+    </li>
+    <li>
+      <p>
+        За счет покупки индексов и акций с плечом на коррекциях можем дополнительно получить порядка 10% в год
+      </p>
+    </li>
+    <li>
+      <p>
+        За счет инвестиций небольшой доли капитала в перспективные акции малой и средней капитализации можно дополнительно получить
+        порядка 10-15% годовых
+      </p>
+    </li>
+    <li>
+      <p>
+        За счет краткосрочных спекуляций небольшой долей капитала индексами и акциями можно дополнительно получить порядка
+        5-10% годовых
+      </p>
+    </li>
+  </ul></div>
+  </div>
+  </div>
+  <div class="elementor-element elementor-element-1615d2f elementor-widget elementor-widget-heading" data-id="1615d2f" data-element_type="widget" data-widget_type="heading.default">
+  <div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default investplan-subtitle">Персональный инвестиционный план</h2>		</div>
+  </div>
+  <div class="elementor-element elementor-element-da44af2 elementor-widget elementor-widget-heading" data-id="da44af2" data-element_type="widget" data-widget_type="heading.default">
+  <div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Для составления своего инвестицонного плана заполните форму ниже и нажмите “Построить план”</span>		</div>
+  </div>
+  <div class="elementor-element elementor-element-5867ae3 elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="5867ae3" data-element_type="widget" data-widget_type="html.default">
+  <div class="elementor-widget-container">
+<form id="calcForm" onsubmit="return false;">
+    <div class="f-group">
+        <label for="firstDepo">Стартовый капитал (в долларах)</label>
+        <input type="text" class="form-control" id="firstDepo" name="firstDepo" required="">
+    </div>
+    <div class="f-group">
+      <label for="yearPer">Среднегодовая доходность 
+      <div id="plan_yield" class="editable-content"></div>
+      
+      </label>
+      <input type="text" class="form-control" id="yearPer" name="yearPer" required="">
+  </div>
+    <div class="f-group">
+        <label for="monthDepo">Ежемесячный взнос (в долларах)</label>
+        <input type="text" class="form-control" id="monthDepo" name="monthDepo" required="">
+    </div>
+    <div class="f-group">
+        <label for="investYears">Срок инвестирования (макс: 30 лет)</label>
+        <input type="text" class="form-control" id="investYears" name="investYears" required="">
+    </div>
+      <div style="display:none;color:red;" id="errInput">Проверьте ввод данных</div>
+      <button type="submit" class="submit-button btn for-investors__btn">Построить план</button>
+</form>
+<div class="x_panel x_panel_1">
+    <div class="x_title">
+      
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content" style="position: relative;">
+    <span class="Y-title">Капитал в (USD)</span>
+      <div id="graph_bar_1" style="width:100%; height:280px;"></div>
+    </div>
+  </div>		</div>
+  </div>
+      </div>
+    </div>
+</div>
+          </div>
+    </div>
+</section>
+</section>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a href=""><img class ="logo" src="./images/logo.svg" width="156px" height="52px" alt="Логотип"></a>
+        <div>
+          <p class="footer__nav-title">Навигация</p>
+          <ul class="header__navigation-list">
+            <div class="footer__nav-div">
+            <li class="header__navigation-item"><a href="#benefits">Обучение</a></li>
+            <li class="header__navigation-item"><a href="#pricing">Преимущества</a></li>
+          </div>
+          <div class="footer__nav-div">
+            <li class="header__navigation-item"><a href="#platforms">Платформа</a></li>
+            <li class="header__navigation-item"><a href="">Инвестплан</a></li>
+          </div>
+          </ul>
+        </div>
+        <p class="footer_descr">Предупреждение о рисках:
+          <br><br>Торговля финансовыми инструментами связана с существенным риском. Стоимость
+          инвестиций может как увеличиваться, так и уменьшаться, и инвесторы могут потерять
+          свой капитал. Вы должны в полном объеме понимать все риски, прежде чем принимать
+          какие-либо инвестиционные решения.</p>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close" type="button" data-modal-close>X
+          <!-- <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-vector-3"></use>
+          </svg> -->
+        </button>
+        <h3 class="modal__title">Если у Вас нет опыта в трейдинге и инвестициях, то Вы можете пройти бесплатное онлайн обучение с опытным трейдером:
+        </h3>
+          <!-- <ul class="modal__list">
+            <li class="modal__list-item"><img class="modal__img" src="./images/el_ok.svg">Выбирать наиболее перспективные акции и  ETF</li>
+            <li class="modal__list-item"><img class="modal__img" src="./images/el_ok.svg">Совершать сделки</li>
+            <li class="modal__list-item"><img class="modal__img" src="./images/el_ok.svg">Проводить инвестиционный  анализ </li>
+            <li class="modal__list-item"><img class="modal__img" src="./images/el_ok.svg">Управлять позицией с помощью stop-loss и take profit</li>
+            <li class="modal__list-item"><img class="modal__img" src="./images/el_ok.svg">Управлять инвестиционным портфелем</li>
+          </ul> -->
+        <form class="form">
+          <div class="form__field">
+            <label class="form__label" for="user-name" >Имя</label>
+            <div class="form__inner">
+              <input class="form__input" type="text" id="user-name" name="user-name" placeholder="Ваше имя"/>
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-vector-5"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="user-tel">Телефон</label>
+            <div class="form__inner">
+              <input class="form__input" type="tel" id="user-tel" name="user-tel" placeholder="Мобильный номер">
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-vector-4"></use>
+              </svg>
+            </div>
+            <p class="error__phone">Пожалуйста введите корректный телефон</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="userEmail">Email</label>
+            <div class="form__inner">
+              <input class="form__input" type="email" id="userEmail" name="user-email" value="" placeholder="Ваш e-mail адрес">
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-vector-8"></use>
+              </svg>
+            </div>
+            <p class="error__mail">Пожалуйста введите корректный email</p>
+          </div>
+          <!-- <div class="form__message">
+            <label class="form__field-checkbox" for="user-comment">Комментарий</label>
+            <textarea class="form__input textarea" name="user-comment" id="user-comment" rows="7"
+              placeholder="Введите текст"></textarea>
+          </div> -->
+    
+          <label class="checkbox" for="terms-conditions">
+            <input class="checkbox__input" type="checkbox" id="terms-conditions" name="terms-conditions">
+            <!-- <svg class="checkbox__icon-box" width="15" height="15">
+              <use class="checkbox__icon-uncheck" href="./images/icons.svg#icon-vector-6"></use>
+              <use class="checkbox__icon-check" href="./images/icons.svg#icon-icon-check"></use>
+            </svg> -->
+            Я подтверждаю, что согласен с  <a class="checkbox__documents" href="" target="_blank">Политикой конфиденциальности</a> и <a class="checkbox__documents" href="" target="_blank">Положениями и условиями</a> которые могут применяться на этом сайте либо на других ресурсах компании. <a class="checkbox__agreement" href="#"> Условия договора</a>
+          </label>
+    
+          <button disabled class="modal__button button"  type="submit" target="_self">Записаться</button></a>
+        </form>
+      </div>
+    </div>
+    
+
+    <script type="module" src="./js/swiper.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/form.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/close.js"></script>
+    <script type="module" src="./js/checkbox.js"></script>
+    <script type="module" src="./js/validation.js"></script>
+    <script type="text/javascript">
+	
+      function depoCalc (firstDepo, monthDepo, yearPer, investYears){
+          if (firstDepo === undefined) {
+              firstDepo = parseInt($('#firstDepo').val());
+          }
+      
+          if (monthDepo === undefined) {
+              monthDepo = parseInt($('#monthDepo').val());
+          }
+      
+          if (yearPer === undefined) {
+              yearPer = parseFloat($('#yearPer').val());
+          }
+      
+          if (investYears === undefined) {
+              investYears = parseInt($('#investYears').val());
+          }
+      
+          var errInput = false;
+          if (investYears < 31) {
+              var profitBars = [];
+              var result = [];
+              var curProfit = firstDepo;
+              var realPer = Math.pow(1+yearPer/100, 1/12);
+              for (i = 0; i < investYears*12; i++) {
+                  if (isNaN(curProfit)) {
+                      errInput = true;
+                  }
+                  curProfit = curProfit*realPer;
+                  profitBars[i] = curProfit;
+                  curProfit = curProfit + monthDepo;
+              }
+              for (i = 1; i < investYears + 1; i++) {
+                  result[i - 1] = [i + '-ый год', Math.round(profitBars[i*12 - 1])];
+              }
+          } else {
+              errInput = true;
+          }
+          if (errInput) {
+              $('#errInput').show();
+              return false;
+          } else {
+              $('#errInput').hide();
+              return result;
+          }
+      
+      
+      }
+      
+      
+    
+      
+    function init_morris_charts() {
+       Morris.Bar({
+              element: "graph_bar",
+              data: result,
+              xkey: 0,
+              ykeys: [1],
+              ymax: 1300000,
+              labels: [],
+              hoverCallback: function (index, options, content, row) {
+                return row[0] + '<br>' + row[1].toLocaleString() + ' USD' ;
+              },
+              barColors: ["#89bf19", "#34495E", "#ACADAC", "#3498DB"],
+              xLabelAngle: 35,
+              hideHover: "auto",
+              resize: !0,
+            })
+      }
+    
+      function init_morris_charts_1() {
+      Morris.Bar({
+              element: "graph_bar_1",
+              data: result,
+              xkey: 0,
+              ykeys: [1],
+              labels: [],
+              hoverCallback: function (index, options, content, row) {
+                return row[0] + '<br>' + row[1].toLocaleString() + ' USD' ;
+              },
+              barColors: ["#89bf19", "#34495E", "#ACADAC", "#3498DB"],
+              xLabelAngle: 35,
+              hideHover: "auto",
+              resize: !0,
+            })
+      }
+    
+    
+      var result = depoCalc(5000, 400, 40, 12);
+      init_morris_charts(result);
+      
+      $(document).ready(function() {
+        $('#calcForm').on('submit', function(){
+           result = depoCalc();
+            if (result) {
+              $('.x_panel').show();
+              $("#graph_bar_1").empty();
+              init_morris_charts_1(result);
+            }
+        });
+    
+      });
+    </script>
+  </body>
+</html>

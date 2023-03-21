@@ -1,0 +1,78 @@
+.investplan-subtitle{
+font-size: 30px;
+line-height: 1.17;
+text-align: center;
+margin: 20px 0;
+}
+
+
+.Y-title{
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(7, 19, 42, 0.6);
+    transform: rotate( 270deg );
+    left: -80px;
+    top: 40%;
+}
+
+.f-group{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.f-group label {
+    text-align: center;
+}
+
+.f-group input {
+    font-style: normal;
+    background-color: #89bf19;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    outline: none;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 10px;
+    box-shadow: -20px 20px 50px 5px #0000001a;
+}
+
+.submit-button{
+    width: 296px;
+    height: 78px;
+    color: #fff;
+    background: linear-gradient(#50b03a 0%, #3a9126 100%), #3a9126;
+    border: 0;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 50px;
+    cursor: pointer;
+}
+
+#calcForm{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chart__list{
+    display: grid;
+    gap: 10px;
+    list-style: disc;
+}
+
+.x_panel.x_panel_1 {
+    display: none;
+}
+
+.investplan{
+    margin-top: 70px;
+}

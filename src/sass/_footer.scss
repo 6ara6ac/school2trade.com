@@ -1,0 +1,27 @@
+.footer{
+    background-color: black;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_descr{
+    font-size: 12px;
+    max-width: 400px;
+    text-align: justify;
+}
+
+.footer__nav-title{
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.footer__nav-div{
+display: grid;
+gap:10px
+}
