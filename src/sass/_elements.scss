@@ -1,5 +1,5 @@
 :root {
-    --swiper-theme-color: #79bf19 !important;
+    --swiper-theme-color: #fff !important;
   }
 
 ul{
@@ -52,8 +52,8 @@ a {
 }
 
 .button::before {
-    content: url('../images/el_ok-sign.svg');
-    margin-right: 9px;
+    content: url('../images/sign.svg');
+    margin-right: 5px;
 }
 
 .button:hover{
