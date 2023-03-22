@@ -159,18 +159,28 @@ button.header__links-icon {
     border: 1px solid #89bf19;
 }
 
-.header__links-item.openButton {
-    width: 150px;
-    background: linear-gradient(180deg, #50B03A 0%, #3A9126 100%), #3A9126;
+.button.header__button{
+    width: 130px;
+    height: 44px;
+    font-size: 14px;
+}
+.button.header__button::before{
+    margin: 0;
 }
 
-.header__links-item.openButton::before{
-    content: url('../images/sign.svg');
-}
+// .header__links-item.button {
+//     height: 48;
+//     width: 150px;
+//     background: linear-gradient(180deg, #50B03A 0%, #3A9126 100%), #3A9126;
+// }
 
-.header__links-item.openButton:hover{
-    background: linear-gradient(180deg, #337224 0%, #3A9126 100%);
-}
+// .header__links-item.openButton::before{
+//     content: url('../images/sign.svg');
+// }
+
+// .header__links-item.button:hover{
+//     background: linear-gradient(180deg, #337224 0%, #3A9126 100%);
+// }
 
 .main__image-mobile {
     width: 90%;
@@ -180,7 +190,6 @@ button.header__links-icon {
 
 .header__learn {
     font-size: 14px;
-    width: 70px;
     height: 44px;
     border-radius: 44px;
     border:0;
