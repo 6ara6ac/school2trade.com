@@ -5,20 +5,32 @@
 }
 
 .footer__container{
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width:1001px) {
+        display: flex;
+        justify-content: space-between;
+}
 }
 
 .footer_descr{
     font-size: 12px;
-    max-width: 400px;
     text-align: justify;
+    margin-top: 20px;
+
+    @media screen and (min-width:1001px) {
+        max-width: 400px;
+        margin: 0;
+    }
 }
 
 .footer__nav-title{
     text-align: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 10px;
+    margin-top: 20px;
+
+    @media screen and (min-width:1001px) {
+        margin: 0;
+    }
 }
 
 .footer__nav-div{

@@ -68,11 +68,16 @@ header{
 
 .header__navigation-list {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     gap: 17px;
     color: #fff;
-    
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1001px) {
+    justify-content: center;
+    margin: 0;
+    }
    
 }
 
@@ -102,9 +107,7 @@ header{
     align-items: center;
 }
 
-button.header__links-icon {
-    width: 100%;
-}
+
 
 
 
@@ -163,6 +166,7 @@ button.header__links-icon {
     width: 130px;
     height: 44px;
     font-size: 14px;
+    margin: 0;
 }
 .button.header__button::before{
     margin: 0;

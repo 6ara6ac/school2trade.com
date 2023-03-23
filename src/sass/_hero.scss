@@ -14,13 +14,21 @@
     background-color: #007EFC;
     padding: 30px;
     border-radius: 40px;
-    width: 50vw;
+    margin-bottom: 20px;
+
+
+    @media screen and (min-width:1001px) {
+        width: 50vw;
+    }
 }
 
 .hero__wrapper{
-    display: flex;
     color: #fff;
     gap: 20px;
+
+    @media screen and (min-width:1001px) {
+        display: flex;
+    }
 }
 
 .hero__subtitle{
@@ -29,10 +37,16 @@
 }
 
 .main__img-wrapper{
-    max-width: 50%;
+    display: grid;
+    align-items: center;
+
     border-radius: 40px;
     padding: 30px;
     background-color: #fff;
+
+    @media screen and (min-width:1001px) {
+        max-width: 50%;
+    }
 }
 
 
@@ -44,19 +58,27 @@
 }
 
 .hero__button-wrapper{
-    display: flex;
     margin-bottom: 20px;
     text-align: center;
     margin: 20px 0;
     color: #fff;
     gap: 20px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
 }
 
 .hero__button-description1{
     padding: 50px;
     background-color: #DF804D;
     border-radius: 40px;
-    width: 50vw;
+    margin-bottom: 20px;
+    
+    @media screen and (min-width:768px) {
+        width: 50vw;
+        margin: 0;
+    }
 }
 
 .hero__button-description2{
@@ -64,7 +86,10 @@
     background-color: #EB5B79;
     color: #fff;
     border-radius: 40px;
-    width: 50vw;
+
+    @media screen and (min-width:768px) {
+        width: 50vw;
+    }
 }
 
 .descr__bold{

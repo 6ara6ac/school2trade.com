@@ -1,6 +1,3 @@
-.platforms.container{
-    margin-top: 50px;
-}
 
 .last-learn__item{
     max-height: 300px;
@@ -134,8 +131,8 @@ align-items: center;
 
 
     @media screen and (min-width:768px) and (max-width:960px) {
-    gap: 0;    
-}
+gap: 20px;}
+
 }
 
 .learn__video{
