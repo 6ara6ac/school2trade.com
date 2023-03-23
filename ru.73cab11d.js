@@ -1,0 +1,2 @@
+const t=document.querySelector("[type=button]"),e=document.querySelector("[data-menu-button]"),n=document.querySelector("[data-menu]");t.addEventListener("click",(function(){const t="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!t),n.classList.toggle("is-open")})),n.addEventListener("click",(function(){const t="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!t),n.classList.toggle("is-open")}));
+//# sourceMappingURL=ru.73cab11d.js.map
