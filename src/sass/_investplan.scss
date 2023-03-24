@@ -84,12 +84,13 @@ margin: 20px 0;
 
 
 .chart__container{
+    display: flex;
     gap: 20px;
     justify-content: space-around;
+    flex-direction: column-reverse;
 
     @media screen and (min-width:1001px) {
-            display: flex;
-
+            flex-direction: inherit;
     }
 }
 
@@ -112,6 +113,7 @@ margin: 20px 0;
     border-radius: 40px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 
     @media screen and (min-width:1001px) {
         max-width: 50%;

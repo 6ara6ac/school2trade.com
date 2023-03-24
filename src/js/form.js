@@ -27,8 +27,8 @@ var raw = JSON.stringify({
   "external_id":0},
 "utm":{
   "utm_medium": "utm_medium",
-  "utm_source":"https://lt.lime.co/",
-  "utm_campaign":"LimeTrader campaign",
+  "utm_source":"https://school2trade.com/",
+  "utm_campaign":"LearningCenter",
   "utm_content":"utm_content",
   "utm_term":"utm_term",
   "xtm_medium":"xtm_medium",
@@ -36,7 +36,7 @@ var raw = JSON.stringify({
   "xtm_campaign":"xtm_campaign",
   "xtm_content":"xtm_content",
   "xtm_term":"xtm_term"},
-"url":"https://lt.lime.co/",
+"url":"https://school2trade.com/",
 "date":Math.floor(Date.now()/1000),
 "ip":"",
 "user-agent":window.navigator.userAgent,
@@ -63,5 +63,5 @@ fetch("https://crm.just2trade.online/_/api/interest/new", requestOptions)
 
 event.preventDefault();
 setTimeout(() => {
-window.location = "https://tx.lime.co";},2000)
+window.location = "https://j2t.com/openaccount/wt/demo/mct-mt5-global/";},2000)
 }
