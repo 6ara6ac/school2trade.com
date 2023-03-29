@@ -96,3 +96,25 @@
     font-weight: 600;
 }
 
+.hero__button-wrapper1{
+    background-color: #007EFC;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero__button-wrapper2{
+    background-color: #df804d;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero__button-item{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}

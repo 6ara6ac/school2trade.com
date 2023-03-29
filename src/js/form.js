@@ -63,5 +63,5 @@ fetch("https://crm.just2trade.online/_/api/interest/new", requestOptions)
 
 event.preventDefault();
 setTimeout(() => {
-window.location = "https://j2t.com/openaccount/wt/demo/mct-mt5-global/";},2000)
+window.location = "/register.html";},2000)
 }
