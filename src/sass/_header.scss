@@ -192,6 +192,9 @@ header{
 }
 
 .header__learn {
+    display: flex;
+    align-items: center;
+
     font-size: 14px;
     height: 44px;
     border-radius: 12px;
@@ -200,6 +203,13 @@ header{
     background: linear-gradient(#50b03a 0%, #3a9126 100%), #3a9126;
     cursor: pointer;
 }
+
+.header__learn::before{
+    content: url('../images/sign.svg');
+    margin-right: 5px;
+}
+
+
 
 .header__learn:hover{
     background-color: #4B4B5C;

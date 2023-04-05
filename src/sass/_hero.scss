@@ -36,7 +36,6 @@
 }
 
 .hero__wrapper-second{
-
     border-radius: 40px;
     padding: 30px;
     background-color: #fff;
@@ -44,11 +43,25 @@
     color: #000;
     margin-top: 20px;
 
+    text-align: center;
+
 
     @media screen and (min-width:1001px) {
         width: 50%;
         margin-top: 0;
     }
+}
+
+.hero__listSecond{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.heroSecond__icons{
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
