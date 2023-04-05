@@ -109,8 +109,6 @@ header{
 
 
 
-
-
 .header__links-item {
     display: flex;
     justify-content: center;
@@ -167,6 +165,7 @@ header{
     height: 44px;
     font-size: 14px;
     margin: 0;
+    border-radius: 12px;
 }
 .button.header__button::before{
     margin: 0;
@@ -195,7 +194,7 @@ header{
 .header__learn {
     font-size: 14px;
     height: 44px;
-    border-radius: 44px;
+    border-radius: 12px;
     border:0;
     color: #fff;
     background: linear-gradient(#50b03a 0%, #3a9126 100%), #3a9126;

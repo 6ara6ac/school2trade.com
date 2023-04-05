@@ -39,6 +39,22 @@
     }
 }
 
+.platform_img{
+    padding: 50px;
+}
+
+.platform_img-wrapper{
+    display: grid;
+    align-items: center;
+
+    border-radius: 40px;
+    padding: 30px;
+    background-color: #fff;
+
+    @media screen and (min-width:1001px) {
+    }
+}
+
 .desktop__title{
     margin-top: 70px;
 
