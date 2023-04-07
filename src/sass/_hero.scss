@@ -1,4 +1,15 @@
+.hero__description-wrapper{
+    gap: 20px;
+
+    @media screen and (min-width:1000px) {
+        display: flex;
+    }
+}
+
 .hero__description{
+    display: grid;
+    align-items: center;
+
     padding: 20px;
     margin: 25px auto;
     text-align: center;
@@ -7,6 +18,31 @@
     border-radius: 30px;
     font-size: 16px;
     font-weight: 500;
+    width: 100%;
+}
+
+.hero__icon{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.description__lector{
+    padding: 20px;
+    margin: 25px auto;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.lector__img{
+    margin-right: auto;
+    margin-left: auto;
+    height: 300px;
 }
 
 .flex__container{
