@@ -1,2 +1,2 @@
 var mask=function(e){function t(e,t){var n="+###############",u=!1;maskList.forEach((function(a){var c=a.code.replace(/[\s#]/g,"");e.value.replace(/[\s#-)(]/g,"").includes(c)&&(n=a.code,"blur"==t&&(e.value.length<a.code.length||(u=!0)))})),e.dataset.complete=1==u?"ture":"false";var a=0,c=e.value.replace(/\D/g,"");e.value=n.replace(/(?!\+)./g,(function(e){return/[#\d]/.test(e)&&a<c.length?c.charAt(a++):a>=c.length?"":e}))}document.querySelectorAll(e).forEach((function(e){e.value,t(e,"blur"),e.addEventListener("input",(function(){t(this,"input")})),e.addEventListener("focus",(function(){t(this,"focus")})),e.addEventListener("blur",(function(){t(this,"blur")}))}))};
-//# sourceMappingURL=index.aee1cb6d.js.map
+//# sourceMappingURL=ru.ac97828e.js.map
