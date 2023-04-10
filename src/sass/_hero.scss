@@ -29,14 +29,19 @@
 
 .description__lector{
     padding: 20px;
-    margin: 25px auto;
     text-align: center;
     background-color: #fff;
     color: #000;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 500;
-    width: 100%;
+    margin-top: 20px;
+
+
+    @media screen and (min-width:1001px) {
+        width: 50%;
+        margin-top: 0;
+    }
 }
 
 .lector__img{
@@ -152,7 +157,12 @@
     border-radius: 20px;
     padding: 30px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-top: 20px;
+
+    @media screen and (min-width:1001px) {
+        width: 50%;
+        margin: 0;
+    }
 }
 
 .hero__button-wrapper2{
