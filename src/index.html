@@ -68,7 +68,8 @@
             <img class="navigation__opened" src="./images/closed.svg" alt="Закрыть мобильное меню">
           </button>
           <a class="logo mobile" href=""><img class ="logo" src="./images/logo.svg" width="156px" height="52px" alt="Логотип"></a>
-          
+          <button class="header__learn mobile" data-modal-open>Start learning</button>
+
             
             <div class="language-list">
                 <div class="language-icon icon-active is-active" data-lang="en" class="list-item js-action" data-lang-button><img class="lang-style" alt="сменить язык" width="36" height="36" src="./images/flags/USA.svg" width="36px"></div>
@@ -78,11 +79,7 @@
                 </ul>
             </div>
           </div>
-          <div class="mobile__menu-container">
-            <!-- <a class="header__links-item mobileButton" href="https://full-int.lime.co/openaccount/real/limetrader/lmi/">Открыть счет</a> -->
-            <button class="header__learn mobile" data-modal-open>Start learning</button>
-          </div>
-          
+        
   
           <div class="mobile__navigation" data-menu>
             <ul class="mobile__navigation-list">
@@ -95,6 +92,95 @@
           </div>
         </div>
     </header>
+
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+ new TradingView.widget({
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100"
+    },
+    {
+      "description": "DAX",
+      "proName": "XETR:DAX"
+    },
+    {
+      "description": "MOEX index",
+      "proName": "MOEX:IMOEX"
+    },
+    {
+      "description": "VIX",
+      "proName": "TVC:VIX"
+    },
+    {
+      "description": "Apple",
+      "proName": "NASDAQ:AAPL"
+    },
+    {
+      "description": "Google",
+      "proName": "NASDAQ:GOOG"
+    },
+    {
+      "description": "Microsoft",
+      "proName": "NASDAQ:MSFT"
+    },
+    {
+      "description": "Amazon",
+      "proName": "NASDAQ:AMZN"
+    },
+    {
+      "description": "Walmart",
+      "proName": "BCS:WALMARTCL"
+    },
+    {
+      "description": "EUR/USD",
+      "proName": "OANDA:EURUSD"
+    },
+    {
+      "description": "GBP/USD",
+      "proName": "FX:GBPUSD"
+    },
+    {
+      "description": "AUD/USD",
+      "proName": "OANDA:AUDUSD"
+    },
+    {
+      "description": "JPY/USD",
+      "proName": "SAXO:JPYUSD"
+    },
+    {
+      "description": "EUR/GBP",
+      "proName": "FX:EURGBP"
+    },
+    {
+      "description": "BTC/USDT",
+      "proName": "BINANCE:BTCUSDT"
+    },
+    {
+      "description": "ETH/USDT",
+      "proName": "BINANCE:ETHUSDT"
+    },
+    {
+      "description": "XRP/USDT",
+      "proName": "BINANCE:XRPUSDT"
+    }
+  ],
+  "showSymbolLogo": false,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "ru"
+}) 
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
     <section id="learn" class="hero container">
       <h1 class="title">School2Trade - we teach how to make money on the exchange</h1>
