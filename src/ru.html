@@ -118,6 +118,97 @@
         </div>
     </header>
 
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+ new TradingView.widget({
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100"
+    },
+    {
+      "description": "DAX",
+      "proName": "XETR:DAX"
+    },
+    {
+      "description": "MOEX index",
+      "proName": "MOEX:IMOEX"
+    },
+    {
+      "description": "VIX",
+      "proName": "TVC:VIX"
+    },
+    {
+      "description": "Apple",
+      "proName": "NASDAQ:AAPL"
+    },
+    {
+      "description": "Google",
+      "proName": "NASDAQ:GOOG"
+    },
+    {
+      "description": "Microsoft",
+      "proName": "NASDAQ:MSFT"
+    },
+    {
+      "description": "Amazon",
+      "proName": "NASDAQ:AMZN"
+    },
+    {
+      "description": "Walmart",
+      "proName": "BCS:WALMARTCL"
+    },
+    {
+      "description": "EUR/USD",
+      "proName": "OANDA:EURUSD"
+    },
+    {
+      "description": "GBP/USD",
+      "proName": "FX:GBPUSD"
+    },
+    {
+      "description": "AUD/USD",
+      "proName": "OANDA:AUDUSD"
+    },
+    {
+      "description": "JPY/USD",
+      "proName": "SAXO:JPYUSD"
+    },
+    {
+      "description": "EUR/GBP",
+      "proName": "FX:EURGBP"
+    },
+    {
+      "description": "BTC/USDT",
+      "proName": "BINANCE:BTCUSDT"
+    },
+    {
+      "description": "ETH/USDT",
+      "proName": "BINANCE:ETHUSDT"
+    },
+    {
+      "description": "XRP/USDT",
+      "proName": "BINANCE:XRPUSDT"
+    }
+  ],
+  "showSymbolLogo": false,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "ru"
+}) 
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+       
+
     <section id="learn" class="hero container">
       <h1 class="title">School2Trade - мы учим зарабатывать на бирже</h1>
       <div class="hero__description-wrapper">
@@ -662,6 +753,8 @@
     
       });
     </script>
+
+ 
     
   </body>
 </html>
