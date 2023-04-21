@@ -37,3 +37,15 @@
 display: grid;
 gap:10px
 }
+
+.demo__button{
+    @media screen and (min-width:1000px) {
+        display: none;
+    }
+    position: sticky;
+    bottom: 0;
+
+    background-color: #df804d;
+    width: 100%;
+    padding: 10px
+}
