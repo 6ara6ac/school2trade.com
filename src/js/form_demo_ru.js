@@ -60,5 +60,5 @@ fetch("https://crm.just2trade.online/_/api/interest/new", requestOptions)
 
 event.preventDefault();
 setTimeout(() => {
-window.location = "https://just2trade.pro/Programs/Trading/forex_mt5_web_M5R1/461701";},2000)
+window.location = "/register_ru.html";},2000)
 }
