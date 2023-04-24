@@ -1,0 +1,2 @@
+document.getElementById("user-tel"),document.querySelector(".error__phone");const e=document.getElementById("userEmail"),t=document.querySelector(".error__mail"),n=/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;e.addEventListener("change",(function(){r=e.value,n.test(r)?t.style="display: none":t.style="display: block";var r}));
+//# sourceMappingURL=in.dcd1aaad.js.map
