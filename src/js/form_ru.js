@@ -5,11 +5,11 @@ myHeaders.append("Accept", "application/json");
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("X-AUTH-TOKEN", "baa0045b-fd5d-4e62-a0b7-7337ff7d3d55");
 
-const submit = document.querySelector ('.modal__button');
+const submit = document.querySelectorAll ('.modal__button');
 
 
 
-submit.addEventListener ('click', onClickForm);
+submit.forEach(data => data.addEventListener('click', onClickForm));
 
 function onClickForm () {
   
